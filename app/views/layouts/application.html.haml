@@ -1,14 +1,15 @@
 !!!
 %html
-  %head
-    %title FileCabinet | Your Life's Work!
-      = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-      = javascript_include_tag 'application', 'data-turbolinks-track' => true
-      = csrf_meta_tags
+%head
+  %title
+  STABLE GENIUS | Your Thoughts: LOCK THEM UP
+  = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
 %body
   %header
     .header_inner
-      - link_to "FileCabinet", root_path
+      - link_to "STABLE GENIUS", root_path, id: "logo"
 
       %nav
         - if user_signed_in?

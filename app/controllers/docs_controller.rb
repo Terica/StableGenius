@@ -2,7 +2,8 @@ class DocsController < ApplicationController
   before_action :find_doc, only: [:show, :edit, :update, :destroy]
 
   def index
-    @docs = Doc.where(user_id: current_user)
+   # @docs = Doc.where(user_id: current_user)
+    @docs = Doc.all.order("created_at DESC")
   end
 
   def show
@@ -14,11 +15,12 @@ class DocsController < ApplicationController
 
   def create
     @doc = Doc.new(doc_params)
-      if @doc.save
-        redirect_to @doc
-      else
-        render 'new'
-      end
+
+    if @doc.save
+      redirect_to @doc
+    else
+      render 'new'
+    end
   end
 
   def edit

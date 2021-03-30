@@ -1,24 +1,4 @@
-# README
+# This Clone was made as a Ruby on Rails Tutorial 
+and styled using custom styling. There is special emphasis on Users with Devise gem, HAML and CRUD (create, read, update, destroy) ability. It was made with the idea that notes created should only be viewable to the creator. With the exception of the landing page, there are no public or social features.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Go to www.crashlearner.com for more info/tutorials.
